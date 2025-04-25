@@ -10,7 +10,7 @@ import MemoryGallery from "./components/MemoryGallery";
 import Timeline from "./components/Timeline";
 import FinalSurprise from "./components/FinalSurprise";
 import Navbar from "./components/Navbar";
-import "./styles/App.css";
+import "./App.css";
 import AboutYou from "./components/AboutYou";
 
 function App() {
