@@ -1,0 +1,100 @@
+.interactive-heart {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(to bottom, #f3e8ff, #fee2e2);
+  }
+  
+  .heart-title {
+    font-family: 'Georgia', serif;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    color: #be185d;
+    text-align: center;
+  }
+  
+  .heart-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .floating-heart {
+    position: absolute;
+    font-size: 2rem;
+    color: #ec4899;
+    z-index: 10;
+  }
+  
+  .heart-svg-wrapper {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 5;
+  }
+  
+  .heart-svg {
+    width: 16rem;
+    height: 16rem;
+    color: #ec4899;
+    filter: drop-shadow(0 4px 8px rgba(236, 72, 153, 0.3));
+  }
+  
+  .heart-message {
+    font-size: 1.25rem;
+    text-align: center;
+    max-width: 500px;
+    margin: 2rem auto;
+    color: #6b7280;
+    line-height: 1.6;
+  }
+  
+  .heart-button {
+    background-color: #ec4899;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 4rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .heart-button:hover {
+    background-color: #db2777;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  @media (max-width: 768px) {
+    .heart-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .heart-svg {
+      width: 3rem;
+      height: 3rem;
+    }
+    
+    .heart-message {
+      font-size: 1rem;
+      padding: 0 1rem;
+    }
+    
+    .heart-button {
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+    }
+  }

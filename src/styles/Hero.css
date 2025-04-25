@@ -1,0 +1,65 @@
+.hero-section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero-title {
+    font-size: 4rem;
+    font-family: 'Georgia', serif;
+    margin-bottom: 30px;
+    color: #ec4899;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #f9fafb;
+  }
+  
+  .hero-button {
+    background-color: #ec4899;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .hero-scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+  }
+  
+  .hero-scroll-icon {
+    width: 40px;
+    height: 40px;
+    color: #ec4899;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+      font-size: 1.25rem;
+    }
+  }

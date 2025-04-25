@@ -1,0 +1,202 @@
+/* src/styles/FinalSurprise.css */
+.gift-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.gift-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+.love-text {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  color: #ff4d6d;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 30;
+  text-align: center;
+}
+
+
+.gift-box:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.gift-box:active {
+  transform: translate(-50%, -50%) scale(0.95);
+}
+
+.gift-box-top {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  background-color: #e74c3c;
+  top: 0;
+  border-radius: 5px 5px 0 0;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.gift-box-bottom {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  background-color: #c0392b;
+  bottom: 0;
+  border-radius: 0 0 5px 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.gift-box-ribbon {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background-color: #f1c40f;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.gift-box-bow {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #f1c40f;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.gift-box-bow:before,
+.gift-box-bow:after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  background-color: #f1c40f;
+  top: 50%;
+  border-radius: 10px;
+}
+
+.gift-box-bow:before {
+  left: -70px;
+  transform: rotate(-45deg);
+}
+
+.gift-box-bow:after {
+  right: -70px;
+  transform: rotate(45deg);
+}
+
+.chocolate {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  background-color: #5D4037;
+  border-radius: 5px;
+  cursor: grab;
+  z-index: 5;
+  user-select: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.chocolate:active {
+  cursor: grabbing;
+}
+
+.message-container {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 800px;
+}
+
+.click-counter {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1.5rem;
+  z-index: 20;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.final-message {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 20;
+  color: rgb(255, 48, 48);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 100;
+  font-size: 1.5rem;
+  padding-top: 4em;
+}
+
+@keyframes open-box {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.box-open-animation {
+  animation: open-box 0.5s ease;
+}
+
+.gift-box-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  z-index: 10;
+}
+
+.click-counter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 15;
+}
+
+.click-message {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}

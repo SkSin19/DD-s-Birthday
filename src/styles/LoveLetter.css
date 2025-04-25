@@ -1,0 +1,128 @@
+.love-letter-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px 40px;
+    background: linear-gradient(to bottom, #fff1f2, #fce7f3);
+  }
+  
+  .envelope-container {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 40px;
+  }
+  
+  .envelope-svg {
+    width: 256px;
+    height: 256px;
+    color: #fb7185;
+  }
+  
+  .letter-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .letter-content {
+    background-color: white;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 224px;
+    height: 160px;
+    overflow-y: auto;
+  }
+  
+  .letter-greeting {
+    font-family: 'Georgia', serif;
+    font-size: 1.125rem;
+    margin-bottom: 16px;
+    color: #9d174d;
+  }
+  
+  .letter-preview {
+    font-size: 0.875rem;
+    color: #4b5563;
+  }
+  
+  .full-letter {
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+  
+  .letter-title {
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    margin-bottom: 24px;
+    color: #9d174d;
+  }
+  
+  .letter-text {
+    color: #4b5563;
+    line-height: 1.8;
+  }
+  
+  .letter-text p {
+    margin-bottom: 16px;
+  }
+  
+  .letter-closing {
+    text-align: right;
+    margin-top: 32px;
+  }
+  
+  .letter-signature {
+    text-align: right;
+    font-family: 'Georgia', serif;
+    font-size: 1.25rem;
+    color: #9d174d;
+  }
+  
+  .letter-button-link {
+    margin-top: 40px;
+  }
+  
+  .letter-button {
+    background-color: #ec4899;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .envelope-svg {
+      width: 192px;
+      height: 192px;
+    }
+    
+    .letter-content {
+      width: 168px;
+      height: 120px;
+      padding: 16px;
+    }
+    
+    .full-letter {
+      padding: 24px;
+    }
+    
+    .letter-title {
+      font-size: 1.5rem;
+    }
+  }

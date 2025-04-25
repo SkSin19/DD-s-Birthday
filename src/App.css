@@ -1,0 +1,16 @@
+.app {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    rgba(17, 24, 39, 0.95) 0%,
+    rgba(31, 41, 55, 0.95) 50%,
+    rgba(55, 65, 81, 0.95) 100%
+  );
+  color: #ffe4e6;
+  padding-top: 80px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
