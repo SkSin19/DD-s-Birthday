@@ -12,7 +12,6 @@
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.6.0",
     "@react-spring/three": "^9.7.5",
-    "drei": "^2.2.21",
     "framer-motion": "^12.7.3",
     "gsap": "^3.12.7",
     "lottie": "^0.0.1",
